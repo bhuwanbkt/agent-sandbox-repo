@@ -1,4 +1,4 @@
-from calculator import add, multiply, subtract
+from calculator import add, multiply, subtract, divide
 
 
 def test_add() -> None:
@@ -11,3 +11,13 @@ def test_subtract() -> None:
 
 def test_multiply() -> None:
     assert multiply(4, 2.5) == 10
+
+
+def test_divide() -> None:
+    assert divide(10, 2) == 5
+
+
+def test_divide_by_zero() -> None:
+    import pytest
+    with pytest.raises(ValueError):
+        divide(5, 0)
