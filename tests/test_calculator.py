@@ -1,4 +1,4 @@
-from calculator import add, multiply, subtract
+from calculator import add, multiply, subtract, power
 
 
 def test_add() -> None:
@@ -11,3 +11,8 @@ def test_subtract() -> None:
 
 def test_multiply() -> None:
     assert multiply(4, 2.5) == 10
+
+
+def test_power() -> None:
+    assert power(2, 3) == 8
+    assert power(5, 0) == 1
