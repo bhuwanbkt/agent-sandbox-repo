@@ -11,3 +11,7 @@ def test_subtract() -> None:
 
 def test_multiply() -> None:
     assert multiply(4, 2.5) == 10
+
+
+def test_add_multiple() -> None:
+    assert add(1, 2, 3, 4) == 10
